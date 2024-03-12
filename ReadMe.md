@@ -30,3 +30,7 @@ This repository acts as a database / archive of the analysis scripts used for al
 
 ## When should I add my experiment's materials to this repository?
 - After analyses are complete (e.g., when plots are finalized and you are writing up the manuscript)
+
+## How can I add my code to this repository?
+- Each experiment will have its own _submodule_ in this repository. If you are not familiar with submodules, please see this link: https://gist.github.com/gitaarik/8735255
+- Step-by-step instructions on how to create a submodule and add your content to it are coming soon!
