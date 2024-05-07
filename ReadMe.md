@@ -1,6 +1,5 @@
 # Different Minds Lab: Analysis Scripts Repository
 
-## What is this repository?
 This repository acts as a database / archive of the analysis scripts used for all previously run experiments in the Different Minds Lab [https://onlineacademiccommunity.uvic.ca/differentmindslab/].
 
 ## Why does this repository exist?
