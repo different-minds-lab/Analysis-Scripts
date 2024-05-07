@@ -31,6 +31,49 @@ This repository acts as a database / archive of the analysis scripts used for al
 ## When should I add my experiment's materials to this repository?
 - After analyses are complete (e.g., when plots are finalized and you are writing up the manuscript)
 
+
 ## How can I add my code to this repository?
-- Each experiment will have its own _submodule_ in this repository. If you are not familiar with submodules, please see this link: https://gist.github.com/gitaarik/8735255
-- Step-by-step instructions on how to create a submodule and add your content to it are coming soon!
+- Each experiment's analysis will have its own _submodule_ in this repository. If you are not familiar with submodules, please review these two websites:
+   - https://gist.github.com/gitaarik/8735255
+   - https://www.atlassian.com/git/tutorials/git-submodule
+
+- Please read the instructions provided below ***very*** carefully.
+  
+**Step 1)**
+  Open your computer's command line or terminal and navigate to an easily accessible folder (e.g., Desktop or Downloads)
+  ```
+  cd Desktop
+  ```
+**Step 2)**
+  Clone the repository if you have not already done so. Use the command below to do so.
+  ```
+  git clone https://github.com/different-minds-lab/Analysis-Scripts
+  ```
+
+**Step 3)**
+   Navigate into the folder that you just cloned.
+   ```
+   cd Analysis-Scripts
+   ```
+**Step 4)**
+   Add your new submodule. Please use your experiment's name when adding your submodule (follow the same naming protocol as your Experimental-Scripts submodule). An example of how to add your submodule is provided below. NOTE! Replace "name_of_experiment" (listed as the last section of the command) with the name of your experiment.
+   ```
+   git submodule add https://github.com/different-minds-lab/Analysis-Scripts name_of_experiment
+   ```
+**Step 5)**
+   Open up the "Analysis-Scripts" folder you cloned using your preferred IDE (e.g., Visual Studio code). Copy and paste your analysis materials to your newly generated subcomponent. This subcomponent should appear as a folder that is nested within the "Analysis-Scripts" folder.
+
+   
+**Step 6)**
+   Double-check to ensure all of your documentation and scripts are present. 
+
+   
+**Step 7)**
+   Return to your terminal and navigate into the "Analysis-Scripts" folder if you are not already seated within it. Then, run the following commands. Replace "insert push message here" with "update name_of_experiment submodule".
+   ```
+   git add .
+   git commit -m "insert push message here"
+   git push
+   ```
+**Step 8)**
+Upon confirming that your analysis materials were successfully added to the submodule, you may delete the entire "Analysis-Scripts" folder from your computer. This way, you will free up space on your computer.
